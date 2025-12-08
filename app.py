@@ -1,5 +1,3 @@
-# app.py - Dengue Forecast with Date Selection
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -87,8 +85,6 @@ def get_historical_weather(lat, lon, target_date):
     """
     API_KEY = "9a993cd66f8905aa6c390b026af290e5"
     
-    # For demonstration, we'll get current weather and adjust based on month
-    # In a real app, you'd use a historical weather API
     
     try:
         # Get current weather as baseline
@@ -101,8 +97,7 @@ def get_historical_weather(lat, lon, target_date):
             # Extract target month
             target_month = target_date.month
             
-            # Simulate seasonal variations based on month
-            # Philippines: Dry season (Nov-Apr), Wet season (May-Oct)
+
             month_adjustments = {
                 1: {'temp_adj': -1.0, 'rain_adj': 0.1, 'humidity_adj': -5},  # January - cool dry
                 2: {'temp_adj': 0.5, 'rain_adj': 0.1, 'humidity_adj': -5},   # February - dry
@@ -643,3 +638,4 @@ st.markdown("""
     <p><small>⚠️ This is a predictive tool for risk assessment. Historical accuracy depends on available data.</small></p>
 </div>
 """, unsafe_allow_html=True)
+
