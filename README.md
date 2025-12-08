@@ -11,16 +11,4 @@ A Streamlit web application for predicting dengue risk across Philippine regions
 - XGBoost machine learning model
 - All 17 Philippine regions supported
 
-## 🚀 Quick Start
-
-### Local Installation
-```bash
-# Clone the repository
-git clone https://github.com/your-username/dengue-forecast.git
-cd dengue-forecast
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the app
-streamlit run app.py
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://Dengue .streamlit.app/](https://dengue-forecast-fpsrpfxjgliybaxqx6gtkg.streamlit.app/)
